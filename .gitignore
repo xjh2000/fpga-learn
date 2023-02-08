@@ -1,0 +1,7 @@
+# for psd project
+bak/
+logbackup/
+
+*.log
+
+.idea
