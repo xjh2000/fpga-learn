@@ -1,0 +1,78 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/modeltech64_10.4/examples
+T_opt
+!s110 1675846515
+VWj>V?C]`N4G_>8J5D8`kf1
+04 9 4 work flow_ledN fast 0
+=1-9c2dcddd3f42-63e3636f-385-5f6c
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.4;61
+R0
+vflow_led
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 @^05mL9GLod5N;LoQZWKF1
+I98;mjbhZDdDmDiLoV8=f73
+Z2 dC:/Users/93462/PdsProject/fpga-learn/sim
+w1675917801
+8../rtl/flow_ledN.v
+F../rtl/flow_ledN.v
+L0 1
+Z3 OL;L;10.4;61
+Z4 !s108 1675917821.051000
+Z5 !s107 ../rtl/flow_ledN.v|C:/Users/93462/PdsProject/fpga-learn/sim/tb_flow_led.v|
+Z6 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/93462/PdsProject/fpga-learn/sim/tb_flow_led.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vflow_ledN
+!s110 1675913881
+!i10b 1
+!s100 YkQQKVb6GbMCD6`<X2]7L2
+Izj;3GUSSmoBg6NKac<Ye=3
+R1
+R2
+w1675912909
+8C:/Users/93462/PdsProject/fpga-learn/rtl/flow_ledN.v
+FC:/Users/93462/PdsProject/fpga-learn/rtl/flow_ledN.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1675913881.713000
+!s107 C:/Users/93462/PdsProject/fpga-learn/rtl/flow_ledN.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/93462/PdsProject/fpga-learn/rtl/flow_ledN.v|
+!i113 0
+R7
+nflow_led@n
+vtb_flow_led
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 Ug[obRc1_BcWKeYZ434JO3
+I]El9Wd>T6J0bNl9]a7dAl3
+R2
+w1675917392
+8C:/Users/93462/PdsProject/fpga-learn/sim/tb_flow_led.v
+FC:/Users/93462/PdsProject/fpga-learn/sim/tb_flow_led.v
+L0 4
+R3
+R4
+R5
+R6
+!i113 0
+R7

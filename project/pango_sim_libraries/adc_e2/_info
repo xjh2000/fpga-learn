@@ -1,0 +1,514 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/93462/PdsProject/fpga-learn/project/pango_sim_libraries
+vvnBfSiJtzqWxp3gEYAGjKg==
+Z0 !s110 1675924527
+!i10b 0
+!s100 z`Ui_hk>fnF5QEW>NXoQc3
+IW]I]8joN@AHoBlT^SA];V2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+!i8a 1904880608
+d.
+Z2 Fnofile
+R2
+Z3 L1 25
+Z4 OL;L;10.4;61
+r1
+!s85 0
+31
+Z5 !s108 1675924527.291000
+Z6 !s107 ./adc_e2_source_codes/adc_e2_taylor_calt.vp|./adc_e2_source_codes/adc_e2_sta_reg.vp|./adc_e2_source_codes/adc_e2_signal_sync.vp|./adc_e2_source_codes/adc_e2_sc_adc_en_ctrl.vp|./adc_e2_source_codes/adc_e2_sample_sync.vp|./adc_e2_source_codes/adc_e2_sample.vp|./adc_e2_source_codes/adc_e2_rstn_syn.vp|./adc_e2_source_codes/adc_e2_rstn_gen.vp|./adc_e2_source_codes/adc_e2_mode_ctrl.vp|./adc_e2_source_codes/adc_e2_logic_top.vp|./adc_e2_source_codes/adc_e2_logic.vp|./adc_e2_source_codes/adc_e2_jtag_interface.vp|./adc_e2_source_codes/adc_e2_jtag_apb_top.vp|./adc_e2_source_codes/adc_e2_en_valid_apb.vp|./adc_e2_source_codes/adc_e2_en_valid.vp|./adc_e2_source_codes/adc_e2_ctrl.vp|./adc_e2_source_codes/adc_e2_clk_gen.vp|./adc_e2_source_codes/adc_e2_channel_ctrl.vp|./adc_e2_source_codes/adc_e2_channel_calculation.vp|./adc_e2_source_codes/adc_e2_calib.vp|./adc_e2_source_codes/adc_e2_apb_interface.vp|./adc_e2_source_codes/adc_e2_analog_top.vp|./adc_e2_source_codes/adc_e2_ana_core.vp|./adc_e2_source_codes/adc_e2_alarm_ot.vp|
+Z7 !s90 -incr|-f|./filelist_adc_e2_gtp.f|-work|adc_e2|
+!i113 0
+Z8 o-work adc_e2 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+nbd11884
+vXtfOGMuNZ5OfnA8ZAv0iIQ==
+R0
+!i10b 0
+!s100 E^SM70QMj4b68NUbo<QIC1
+Ig<A6Md_^=P`Yo`c62fCnb1
+R1
+!i8a 2057403168
+d.
+R2
+R2
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+nd4dc465
+v25g6shDpmOxz8rJeSmudwGl8/HLBgEqpJ+9Lacq0v3c=
+R0
+!i10b 0
+!s100 `_N3BRaNkbOfd^zO:MY6L0
+IH<:K>BFGbNSl5:LMC;dK_1
+R1
+!i8a 1401908080
+d.
+R2
+R2
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+nb7f8850
+v5ldMuMI7J1ZwzMRSS1L2dk4ChnpuJs2bvY+UGl/7+5s=
+R0
+!i10b 0
+!s100 83d0?b>aVnGzb?o>kKAdK3
+I[>X65]]IE<<V_dTbD;Jog1
+R1
+!i8a 1773474688
+d.
+R2
+R2
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+n83b19e5
+vE9ZcYQII+IrXbmM7b0c6dA==
+R0
+!i10b 0
+!s100 Z_o7?9zDB8IDDP^T6=aaH1
+Iic01JCOQTBMTU[;]VUg?41
+R1
+!i8a 298250160
+d.
+R2
+R2
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+n223f772
+vzmqH1wDdkEM75ifEeuNnj6M57IePmoQOZ5d2k3zElJs=
+R0
+!i10b 0
+!s100 3V3aTKFl@zUT:]PV9SDKO1
+I<WO=m^^f1okUeoT3jA]5a3
+R1
+!i8a 1253632320
+d.
+R2
+R2
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+n9021c5e
+ve/EAnD7RmZ5qrS0A2GdV8lJ4DAbAlC0JGUJBE9UmQMc=
+R0
+!i10b 0
+!s100 8;ilMe]EUGAn@8DRQ[mO21
+IV?4<_:z<M<Jz]zh;WO>3=1
+R1
+!i8a 1749581344
+d.
+R2
+R2
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+na3296ec
+vHwndkb25I2z3pDVbMU6llA==
+R0
+!i10b 0
+!s100 B6PbL:JcU>cBQ?C?dX;JU2
+I_kJ_Z8X^bIj<nRin0@a?10
+R1
+!i8a 2130685888
+d.
+R2
+R2
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+n4c6df9e
+vT7ZjyksvZSBqTEgOSSvgkA==
+R0
+!i10b 0
+!s100 NAZ9_?0N4eoMAR=z76be;3
+IE40;m82ekc>Ze<YAdPo8_3
+R1
+!i8a 1981103760
+d.
+R2
+R2
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+n82202dc
+v14L2zcmdZjrbEMsiI0IlLA==
+R0
+!i10b 0
+!s100 ad=eiaQBO[hIa4O0oKhjZ1
+INd9lWVnW`7Fb3S2OzgbU93
+R1
+!i8a 266730912
+d.
+R2
+R2
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+nb3460d4
+vuq1bmi/IRpwzOIOn5nOoRsYHDsq1USHwCzBxwA92PmY=
+R0
+!i10b 0
+!s100 >H632bl0ROMoP^dW;0;Vc0
+I;;?]WWmoNoh;hViGn[fRY0
+R1
+!i8a 360393520
+d.
+R2
+R2
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+nd36c02
+vBeqfnTB1acO2tCJmEEZpeIX9BtPERbQUNVYpYDlpr0M=
+R0
+!i10b 0
+!s100 SAB4S:31D25PFIo=8JN8P1
+I6@a1WI3V0V@EQOieR6Uh;0
+R1
+!i8a 1368614160
+d.
+R2
+R2
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+nbd55010
+vcI9BvcE4kwCZRgmaFIcbuBbemxq5+4rCzUoMoN59SE0=
+R0
+!i10b 0
+!s100 d?m0;0<1C=M[8X`XO???m3
+IB5Pj5W;Hd`AAn[`De:N4>2
+R1
+!i8a 2067183376
+d.
+R2
+R2
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+n9edba75
+vsQbfPhYT6HdG6UgwFXcIUg==
+R0
+!i10b 0
+!s100 >NT6_ZOFGSO01jzmH5jbQ2
+IJJ_c7A0i7QliKDklnH04l2
+R1
+!i8a 532663024
+d.
+R2
+R2
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+n239c873
+v2TASqTMfCKcafgB+TVhbWqdjFt7/IETj0x2ZSQMVCYs=
+R0
+!i10b 0
+!s100 14o^KBJ=@a@FPflATe4]@1
+I@PLmEUL:gNiQ42Jz29AH`3
+R1
+!i8a 1386446368
+d.
+R2
+R2
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+n87b54a0
+vXXr9SrrnxSuPqtuXFqEvZgfDxh9Qt16mxvcHL5uvQHY=
+R0
+!i10b 0
+!s100 Z:cb]`ZE9BDmMQ7;Q8dm02
+IeQ_=L4WK:QGL8<ff64lL51
+R1
+!i8a 1759233216
+d.
+R2
+R2
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+nf37914c
+vLOSm74tv9bGrdJkPGbvk6Q==
+R0
+!i10b 0
+!s100 ifkPO9iD?^SoUenefS97B3
+I3[iSf5V>7>Xo@IO2gS[<o0
+R1
+!i8a 1533578272
+d.
+R2
+R2
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+n40c7c8e
+v6TXy5XXvJGYWmumkfv5Amw==
+R0
+!i10b 0
+!s100 D]XE9H8XgO:4[n`OKgam;0
+Ineb5WBb8E8BQDd>Ej6BMY1
+R1
+!i8a 1882925008
+d.
+R2
+R2
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+n40c4bce
+vD3wD3tXUxtFUU3W9lYzhGw==
+R0
+!i10b 0
+!s100 h@HUOomJ[_?LV2S5Wn8Fg1
+ISEVB0F>hA7ThNKGTzc]`h0
+R1
+!i8a 683383472
+d.
+R2
+R2
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+n13f1f05
+vvnPTSZSGmw/bb2715j4sUmiJ0N2gpcf7zFsPwKmG0Y0=
+R0
+!i10b 0
+!s100 NWnDW4T`V_2[KcEC4HZH?1
+I[W80[?;_31Eg=E]^2oDAc2
+R1
+!i8a 1767823824
+d.
+R2
+R2
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+nc55fb3
+vzDDxhpnBaBS5wayUEk+o9kVbFzfe4ow5tXjPjqBZp9Y=
+R0
+!i10b 0
+!s100 EjMC?RkJ`=WBNH4h]8dh02
+I331WVlc>YLiE99?S8IH?V2
+R1
+!i8a 1545086480
+d.
+R2
+R2
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+na4a21ec
+v4VjWWr94zmHtUo/1UFJrksGaGkZDQmoQm3cjPjaohyE=
+R0
+!i10b 0
+!s100 A`kS4W9M7>O=iNAQHK<cI2
+IlhE4:eT<33ODT`mcD[?j=3
+R1
+!i8a 56888848
+d.
+R2
+R2
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+n615c783
+vpePE+O6vMlrV8w3MdlCH2g==
+R0
+!i10b 0
+!s100 zKKg7hA<Z84DeBnR<VYOO1
+IcN9F9Z^Pb459[NblD0:^l1
+R1
+!i8a 622431216
+d.
+R2
+R2
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+n34eaa7
+v1MSYRj+p9I/m26Mzxw31/LK5jpGm3koNHBSCVVX/WHo=
+R0
+!i10b 0
+!s100 GMTGahFo:8n1RHCz4LiTh0
+IL0Nbohe;Nl>PS]N2<__NM2
+R1
+!i8a 1206054416
+d.
+R2
+R2
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+n4758d84

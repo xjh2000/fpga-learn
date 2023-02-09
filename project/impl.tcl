@@ -44,3 +44,6 @@ dev_map
 pnr 
 report_timing 
 gen_bit_stream 
+add_design "C:/Users/93462/PdsProject/fpga-learn/sim/tb_flow_led.v"
+remove_design -force -verilog "C:/Users/93462/PdsProject/fpga-learn/sim/tb_flow_led.v"
+add_simulation "C:/Users/93462/PdsProject/fpga-learn/sim/tb_flow_led.v"
