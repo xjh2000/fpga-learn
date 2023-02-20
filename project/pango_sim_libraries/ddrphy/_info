@@ -8,13 +8,14 @@ z2
 !i10f 100
 cModel Technology
 dC:/Users/93462/PdsProject/fpga-learn/project/pango_sim_libraries
-vbc2Rlt86Jm3WrVi4E2R89g==
-Z0 !s110 1675924529
+vR1puPKC1sVntQWaT5mMg3g==
+!s10a 0
+Z0 !s110 1675998784
 !i10b 0
 !s100 2UDP>]hbe?B^QjcYIhWGQ1
 IEk1OAB`:==[@MeK8bLzU_1
 Z1 VDg1SIo80bB@j0V0VzS_@n1
-!i8a 7556048
+!i8a 2119474256
 d.
 Z2 Fnofile
 R2
@@ -23,19 +24,20 @@ Z4 OL;L;10.4;61
 r1
 !s85 0
 31
-Z5 !s108 1675924529.292000
+Z5 !s108 1675998783.771000
 Z6 !s107 ./ddrphy_source_codes/rst_sync.vp|./ddrphy_source_codes/ddrphy/pgl_ddrphy_gatecal.vp|./ddrphy_source_codes/ddrphy/pgl_ddrphy_rowaddr.vp|./ddrphy_source_codes/ddrphy/pgl_ddrphy_update.vp|./ddrphy_source_codes/ddrphy/pgl_ddrphy_wrlvl.vp|./ddrphy_source_codes/ddrphy/pgl_ddrphy_wdata_path_adj.vp|./ddrphy_source_codes/ddrphy/pgl_ddrphy_top.vp|./ddrphy_source_codes/ddrphy/pgl_ddrphy_slice_top.vp|./ddrphy_source_codes/ddrphy/pgl_ddrphy_slice_rddata_align.vp|./ddrphy_source_codes/ddrphy/pgl_ddrphy_rdcal.vp|./ddrphy_source_codes/ddrphy/pgl_ddrphy_main_ctrl.vp|./ddrphy_source_codes/ddrphy/pgl_ddrphy_init.vp|./ddrphy_source_codes/ddrphy/pgl_ddrphy_info.vp|./ddrphy_source_codes/ddrphy/pgl_ddrphy_dqs_rddata_align.vp|./ddrphy_source_codes/ddrphy/pgl_ddrphy_dqsi_rdel_cal.vp|./ddrphy_source_codes/ddrphy/pgl_ddrphy_dqs_gate_fine_cal.vp|./ddrphy_source_codes/ddrphy/pgl_ddrphy_dqs_gate_coarse_cal.vp|./ddrphy_source_codes/ddrphy/pgl_ddrphy_dfi.vp|./ddrphy_source_codes/ddrphy/pgl_ddrphy_data_slice_wrlvl.vp|./ddrphy_source_codes/ddrphy/pgl_ddrphy_data_slice.vp|./ddrphy_source_codes/ddrphy/pgl_ddrphy_data_slice_dqs_gate_cal.vp|./ddrphy_source_codes/ddrphy/pgl_ddrphy_control_path_adj.vp|./ddrphy_source_codes/ddrphy/pgl_ddrphy_calib_top.vp|./ddrphy_source_codes/ddrphy/pgl_ddrphy_calib_mux.vp|./ddrphy_source_codes/ddrphy/pgl_ddrphy_apb.vp|./ddrphy_gtp_wrap.vp|
 Z7 !s90 -incr|-f|./filelist_ddrphy_gtp.f|-work|ddrphy|
 !i113 0
 Z8 o-work ddrphy -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 n24977d0
-vgB7axTjcH+KcZwHoPl0sjg==
+viNBAYZNXH9bJV9t2k+VTrA==
+!s10a 0
 R0
 !i10b 0
 !s100 Z]E9:MlP?zJBa3DUH2QLD1
 IJbdHj3^OOgEcVQV`UAPb01
 R1
-!i8a 386523808
+!i8a 730498304
 d.
 R2
 R2
@@ -50,13 +52,14 @@ R7
 !i113 0
 R8
 n8dcf492
-vZNkDflS27B/nnUceErpkaoHLI4DT4ZukHQf5PWCjECk=
+vyE+BBY3JbH1ZXkrKdyPVBkukuEKgGXItjbUs1rQGozQ=
+!s10a 0
 R0
 !i10b 0
 !s100 a_]h6:zhgWfki_8HHae==3
 ITmG9^iZPMUP`MHdD0z:R=2
 R1
-!i8a 1368928928
+!i8a 629064304
 d.
 R2
 R2
@@ -71,13 +74,14 @@ R7
 !i113 0
 R8
 na2cb158
-vpojq7pG2NUWBLbU8EVl8kPq1GT1uNiJ5qzobKNvQxY0=
+vOTEX9u4/8OEnekY89o4wvrndYIF+FNmlmCXtvfGiEZ0=
+!s10a 0
 R0
 !i10b 0
 !s100 VOFBUbHa0DBfzn6C1TBm>2
 IjNLNbR=bmP<]iLFKXOIk@1
 R1
-!i8a 350079248
+!i8a 777678896
 d.
 R2
 R2
@@ -92,13 +96,14 @@ R7
 !i113 0
 R8
 na2ca0f0
-v1GLswlEIT5NGIbAsYALHOHquemzijEIJSGHNAUz0O/M=
+vhO1GYUE6h1yGcbBQZQs70qQgwWY6IK+44hED2EzoYGw=
+!s10a 0
 R0
 !i10b 0
 !s100 _RJFPROcO;ZkEmE1Y3=f71
 ISSmdnPK=Q8[4KJahJ[`V10
 R1
-!i8a 33684240
+!i8a 1969147568
 d.
 R2
 R2
@@ -113,13 +118,14 @@ R7
 !i113 0
 R8
 nef7da1a
-vWM2/dMlLiQ0MraWvmaFG0mZIgVACTSjYVzii1ZVc66U=
+v7T/hxcCbIu/VUazUoaVnr9Y2Tl09Ew8FFhdkLtAjGwE=
+!s10a 0
 R0
 !i10b 0
 !s100 ^mOOiND]7k9[F9KfDOmL<3
 I?8PWUTDG9ZR0K>d8jQ^ZN3
 R1
-!i8a 399071296
+!i8a 401176032
 d.
 R2
 R2
@@ -134,13 +140,14 @@ R7
 !i113 0
 R8
 nca748b5
-vjL0kRINq76/yw0I+T0D3W1fSFBYKNyObr0yh0SPi7sXJC2BpgB2xcU2ec1MZiB9p
+vc4RQiCFvH4k31HPSdghoKKCum8jde9rkB34iSYaJXUP6I7QnVCmhY/R2dYFmznYT
+!s10a 0
 R0
 !i10b 0
 !s100 ]ERo?c8M3]@3[AjU0f=mK0
 I:deDeIk@PN2]o0MIO8BAT1
 R1
-!i8a 1913994688
+!i8a 1473521072
 d.
 R2
 R2
@@ -155,13 +162,14 @@ R7
 !i113 0
 R8
 n76747dc
-v8q3xOsJIqrqRBtlBbCed4nsIIvcf8fWIYbhnxOG51UE=
+vPwIXQTKnBukyxhbR5XAs2I6xNiq3Vutyb7UDT0uUj+Y=
+!s10a 0
 R0
 !i10b 0
 !s100 bHFYQ0^2nkmOFY^8^:d4<1
 Id1jAb_U]Q]COb>:;BG0io3
 R1
-!i8a 832622880
+!i8a 2077783760
 d.
 R2
 R2
@@ -176,13 +184,14 @@ R7
 !i113 0
 R8
 n7c9db7c
-v8JPmfRx4fwVeBFM26W1FQg==
+v85xoIRAx4QnXeK6KYUAdcQ==
+!s10a 0
 R0
 !i10b 0
 !s100 j]W3fNi]_>C>VJoBCi_?71
 I>:6GVMU^Y7J>k=4M<9az01
 R1
-!i8a 306286848
+!i8a 26735456
 d.
 R2
 R2
@@ -197,13 +206,14 @@ R7
 !i113 0
 R8
 n8dcf639
-vx7F7/v5Th1i4vkaa79zvgI3rK0WeVq/d8+bOHtnTv/8=
+vK2dUB1FbH0fBLay0PbsAwrqkJPBi5wuWbyXsC1N46M0=
+!s10a 0
 R0
 !i10b 0
 !s100 <cGI2jll3::Zii<HGNjWW0
 IMW8k@P`gG?9b]2Ab>]`Q92
 R1
-!i8a 439056464
+!i8a 2040686336
 d.
 R2
 R2
@@ -218,13 +228,14 @@ R7
 !i113 0
 R8
 n47f7d8c
-vXJTcXBQQKFuM9yUwtJiIybxGJIoXz1XfUui2vPigN8U=
+v1m8IOezwHqytA6wzzuF7XbmdoeaIFa/0A4r5k36ks8w=
+!s10a 0
 R0
 !i10b 0
 !s100 6O]^_NaWWhD:L>j1;BDYa3
 I@jZ=8hzGCIg<^UinjPWjS2
 R1
-!i8a 465854640
+!i8a 434264736
 d.
 R2
 R2
@@ -239,13 +250,14 @@ R7
 !i113 0
 R8
 nf38bd3c
-vnPGjPs5/5gYsbshHfksWGCNl+f2//se4D/bNN/lC+bY=
+viGyKhvTBTPAiIo/FjLS1eoxS/1TzgEgLzUdRtMcYfw8=
+!s10a 0
 R0
 !i10b 0
 !s100 KXf9jnKBIH`gTBN_QJiBm0
 I<LXhnkULU5JY<;?E]jci12
 R1
-!i8a 1602076736
+!i8a 1568252848
 d.
 R2
 R2
@@ -260,13 +272,14 @@ R7
 !i113 0
 R8
 ne13f06e
-vVnmNywhcIXOwYwpc8q5nhij4DATlVSu7yRpunevtKbo=
+vTHyMKCiYPSye/sXCRYXp5TV3vj9mDzkp6JQHxvGownk=
+!s10a 0
 R0
 !i10b 0
 !s100 4jYKXlj?Y==^=oT86Ed?83
 IGe^cMWhPC?a5>5UiFmknL0
 R1
-!i8a 1266773296
+!i8a 1207322688
 d.
 R2
 R2
@@ -281,13 +294,14 @@ R7
 !i113 0
 R8
 ndd1130c
-vzPhHJnzBxbsZ3SBU4NudLgjoIFIjt6FaiFGANRR3JJE=
+v8U2LVGImZyiTf2LiUarI4eQFHq/gq7n6ZCB6wq1/4mc=
+!s10a 0
 R0
 !i10b 0
 !s100 [ENHE=b`o4Dboh^JZL8`e3
 ILZz:7J?:JdEoaA5z>jZgP0
 R1
-!i8a 473008928
+!i8a 1602068416
 d.
 R2
 R2
@@ -302,13 +316,14 @@ R7
 !i113 0
 R8
 n172658c
-vo+th5R7Z/omnedGY0VOFxQ==
+vwtRM/ol45lQgpYDO9YMTmQ==
+!s10a 0
 R0
 !i10b 0
 !s100 o;7^:a2PDYKI5h6bK9dW:1
 I=5OBKSD7g2_gnkE5]?RI>0
 R1
-!i8a 1081994928
+!i8a 364306176
 d.
 R2
 R2
@@ -323,13 +338,14 @@ R7
 !i113 0
 R8
 ndcf4b4f
-vlWBTDXkgCi44xwgLOEXl1Q==
+vCvV+OWzMz+QAsxFn6dGMEQ==
+!s10a 0
 R0
 !i10b 0
 !s100 SKTjF@67zT`Q<d^b5I0W^1
 IOTZO07YoGN=JY_R1G`Q6W3
 R1
-!i8a 874993072
+!i8a 224866176
 d.
 R2
 R2
@@ -344,13 +360,14 @@ R7
 !i113 0
 R8
 ndcf4c84
-vA7r+zcFjrj2NHnDP9Ds82+wy8zkW8mITFFPpXL/aR2c=
+vza9OuWwxYVcI4YrLmjg3J78Xilia4K7NExGcd3VG4as=
+!s10a 0
 R0
 !i10b 0
 !s100 WU3IbJ[_Z4AAiA6EM73;T1
 I9?f<62UKQkzdgfjC8<GE]0
 R1
-!i8a 984770096
+!i8a 1196923312
 d.
 R2
 R2
@@ -365,13 +382,14 @@ R7
 !i113 0
 R8
 n8f8a40c
-v1rRrrWjTi8n0NWZz4GyHWI7tHasYuIh7Ku2+p7WnDTk=
+vL75I2doqiWasLcf/SO4nGA01g9BLu54SmaHnhPaJmkU=
+!s10a 0
 R0
 !i10b 0
 !s100 41J:h3Ag=;;S<D41Co^1L0
 InM3:Lhe@]PbKF4=mTnV;b2
 R1
-!i8a 6635920
+!i8a 1600281760
 d.
 R2
 R2
@@ -386,13 +404,14 @@ R7
 !i113 0
 R8
 ncc451ac
-v5n5p1YHxf6HnqEdRApOb0S2XVBnx45uyuHr/L4pVsEM=
+vDpJ+FJqBKPoFRCOeDRch2UUi2nx6v3SFR/iaqYPAVxs=
+!s10a 0
 R0
 !i10b 0
 !s100 T>D=lnIJESKeckJkbNQ[J0
 IVdKU^5l1fdTM:EI5Hgkn52
 R1
-!i8a 1602510048
+!i8a 509228656
 d.
 R2
 R2
@@ -407,13 +426,14 @@ R7
 !i113 0
 R8
 n595a672
-vWNpH9Myr+soztRM5868BW9fCcsTBpwQ6q9+p64ZWhiM=
+vSz7fvcb+jMXyjA6RkikAOLxRsC0AUAIHKNkUEgg3HSM=
+!s10a 0
 R0
 !i10b 0
 !s100 >ElgPm1H<WLbSZSZLUX8`2
 IEDTHaOQYfBXGGP8e0V3c=3
 R1
-!i8a 1709352112
+!i8a 1510675568
 d.
 R2
 R2
@@ -428,13 +448,14 @@ R7
 !i113 0
 R8
 ndb1f30e
-v4B0gZxWz/8ZxFMGa/tKFTXm39Un1RpLIq/gfvrPO354=
+vLtvMAQQeC9HiOBbr0+v6DatYqJi9ZaRONB2EzWWrmsc=
+!s10a 0
 R0
 !i10b 0
 !s100 CPa^]b@lW:VKDb[n46>8>0
 IA2M41ZH_fod[IXV_eG7lJ0
 R1
-!i8a 1170186672
+!i8a 183978256
 d.
 R2
 R2
@@ -449,13 +470,14 @@ R7
 !i113 0
 R8
 n747adb0
-vUG9E+O2dn5LklaRYSYUpxQ==
+vDxeCXTcGgRdmwrvVVbNv8g==
+!s10a 0
 R0
 !i10b 0
 !s100 gV]8OY:N1Se5M]H[SEnCg2
 I_ek?@5E39nMi=US0E2QgP2
 R1
-!i8a 2096052160
+!i8a 499387376
 d.
 R2
 R2
@@ -470,13 +492,14 @@ R7
 !i113 0
 R8
 n8dcc790
-vA5glKm6XSYmj7aR13gA6Gmoi171On9+kaaZxUin1o1g=
+vWVmRibOVAI24OCd3EGZUBgmtEjAf3wC0Z0h37FvcRM4=
+!s10a 0
 R0
 !i10b 0
 !s100 3KoF@4Ch<:31C4ld2>J8E1
 IK3KGJ8NW8;^QDHGOZFT`J0
 R1
-!i8a 1140296016
+!i8a 1061384544
 d.
 R2
 R2
@@ -491,13 +514,14 @@ R7
 !i113 0
 R8
 ncc091ac
-vGwqVnFFCIUeoxudWG0N9GZxHXhA6nd7qCh/2stvj96g=
+vJep0Q743gPdYbO10gqLZl4mq+b2l4eofzw002yZWO0Y=
+!s10a 0
 R0
 !i10b 0
 !s100 bR[CUV620ezAmnWP[BSdz0
 I58[nM71Aj3@X@eUj0BNUY0
 R1
-!i8a 498520816
+!i8a 2096563232
 d.
 R2
 R2
@@ -512,13 +536,14 @@ R7
 !i113 0
 R8
 ndabedda
-v5OtX+kktNjnkQ7OOCg4VQ1vH7ZyHCA+2dPFtRoz/oos=
+viRdBsZ7iOjUF6YWvph6Pcv+BNOG0wqprVckJKZT6FpI=
+!s10a 0
 R0
 !i10b 0
 !s100 ZJKhP^VO5^o@f7a9l2NZ03
 IXMemZ[kf;3]h6j6dmY^;H1
 R1
-!i8a 1249491360
+!i8a 1563020496
 d.
 R2
 R2
@@ -533,13 +558,14 @@ R7
 !i113 0
 R8
 ncc28b1c
-vk0euoaSMeIGWpfIyAtNeag==
+vjAS/eRGU/e9uvm5HrWPt0Q==
+!s10a 0
 R0
 !i10b 0
 !s100 dKzSdiBC9m9:dLJQ=o:9B3
 IoQmADJ17J?4=LThTP3KmO1
 R1
-!i8a 459757536
+!i8a 1101344096
 d.
 R2
 R2

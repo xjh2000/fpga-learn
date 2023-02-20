@@ -8,13 +8,14 @@ z2
 !i10f 100
 cModel Technology
 dC:/Users/93462/PdsProject/fpga-learn/project/pango_sim_libraries
-vktlJYd21EDMtNrLXi6/sVw==
-Z0 !s110 1675924540
+vLoAEikpa7bWOoP8/l/TeKg==
+!s10a 0
+Z0 !s110 1675998794
 !i10b 0
 !s100 C;]_l?0NmDiRh`=]>`D>b0
 IkEFA:Y]i7PE4No9?Jj;bk3
 Z1 VDg1SIo80bB@j0V0VzS_@n1
-!i8a 880216912
+!i8a 1843754880
 d.
 Z2 Fnofile
 R2
@@ -23,19 +24,20 @@ Z4 OL;L;10.4;61
 r1
 !s85 0
 31
-Z5 !s108 1675924540.309000
+Z5 !s108 1675998794.199000
 Z6 !s107 ./oserdes_e1_source_codes/int_oserdes_e1.vp|./oserdes_e1_source_codes/int_oserdes_e1_7km.vp|
 Z7 !s90 -incr|-f|./filelist_oserdes_e1_gtp.f|-work|oserdes_e1|
 !i113 0
 Z8 o-work oserdes_e1 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 nd0afb41
-vK8qcEtoMr1Okx1Mxf38qwDFp1QN6o8RMQsY72cKBhoY=
+vUjEhK2rtYOa6jFphoEblRUAg2Ex6KFvU8L8EknPvOK4=
+!s10a 0
 R0
 !i10b 0
 !s100 POCmI=ON>TjVEb[a`kA8n2
 IZR<ZkDo9J_Noj6Z7<fa[R2
 R1
-!i8a 915617616
+!i8a 1750592384
 d.
 R2
 R2

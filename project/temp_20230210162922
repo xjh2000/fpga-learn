@@ -1,0 +1,9 @@
+Project.device.designInputFile=C:/Users/93462/PdsProject/fpga-learn/project/synthesize/Present_syn.adf
+Project.device.ScanChain=1
+Project.device.UserJtag=0
+Project.device.deviceFamily=Logos
+Project.device.deviceModel=PGL22G
+Project.device.devicePackage=MBG324
+Project.device.deviceSpeedGrade=-6
+Project.Architecture=0 
+Project.unit.dimension=0

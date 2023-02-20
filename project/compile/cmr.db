@@ -6,7 +6,7 @@
             <data>File Type</data>
         </column_headers>
         <row>
-            <data>C:/Users/93462/PdsProject/fpga-learn/rtl/flow_ledN.v</data>
+            <data>C:/Users/93462/PdsProject/fpga-learn/rtl/uart_loopback_top.v</data>
             <data>Verilog</data>
         </row>
     </table>
@@ -20,9 +20,9 @@
             <data>RAM(GB)</data>
         </column_headers>
         <row>
-            <data>0.40625</data>
-            <data>2</data>
-            <data>98,729,984</data>
+            <data>0.328125</data>
+            <data>3</data>
+            <data>99,803,136</data>
             <data>WINDOWS 10 x86_64</data>
             <data>12th Gen Intel(R) Core(TM) i9-12900H</data>
             <data>31</data>
@@ -34,16 +34,124 @@
             <data message="4">Enable Verilog2k features and keywords</data>
         </row>
         <row>
-            <data message="4">Verilog-0001: Analyzing file C:/Users/93462/PdsProject/fpga-learn/rtl/flow_ledN.v</data>
+            <data message="4">Verilog-0001: Analyzing file C:/Users/93462/PdsProject/fpga-learn/rtl/uart_loopback_top.v</data>
         </row>
         <row>
-            <data message="4">Verilog-0002: [C:/Users/93462/PdsProject/fpga-learn/rtl/flow_ledN.v(line number: 1)] Analyzing module flow_ledN (library work)</data>
+            <data message="4">Found Verilog include file C:/Users/93462/PdsProject/fpga-learn/rtl/uart_recv.v</data>
         </row>
         <row>
-            <data message="4">Module &quot;flow_ledN&quot; is set as top module.</data>
+            <data message="4">Verilog-0002: [C:/Users/93462/PdsProject/fpga-learn/rtl/uart_recv.v(line number: 1)] Analyzing module uart_recv (library work)</data>
         </row>
         <row>
-            <data message="4">Verilog-0003: [C:/Users/93462/PdsProject/fpga-learn/rtl/flow_ledN.v(line number: 1)] Elaborating module flow_ledN</data>
+            <data message="4">Found Verilog include file C:/Users/93462/PdsProject/fpga-learn/rtl/uart_loop.v</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0002: [C:/Users/93462/PdsProject/fpga-learn/rtl/uart_loop.v(line number: 1)] Analyzing module uart_loop (library work)</data>
+        </row>
+        <row>
+            <data message="4">Found Verilog include file C:/Users/93462/PdsProject/fpga-learn/rtl/uart_send.v</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0002: [C:/Users/93462/PdsProject/fpga-learn/rtl/uart_send.v(line number: 1)] Analyzing module uart_send (library work)</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0002: [C:/Users/93462/PdsProject/fpga-learn/rtl/uart_loopback_top.v(line number: 5)] Analyzing module uart_loopback_top (library work)</data>
+        </row>
+        <row>
+            <data message="4">Module &quot;uart_loopback_top&quot; is set as top module.</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0003: [C:/Users/93462/PdsProject/fpga-learn/rtl/uart_loopback_top.v(line number: 5)] Elaborating module uart_loopback_top</data>
+        </row>
+        <row>
+            <data message="4">Module instance {uart_loopback_top} parameter value:
+    CLK_FREQ = 32'b00000010111110101111000010000000
+    UART_BPS = 32'b00000000000000011100001000000000</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0004: [C:/Users/93462/PdsProject/fpga-learn/rtl/uart_loopback_top.v(line number: 29)] Elaborating instance u_uart_recv</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0003: [C:/Users/93462/PdsProject/fpga-learn/rtl/uart_recv.v(line number: 1)] Elaborating module uart_recv</data>
+        </row>
+        <row>
+            <data message="4">Module instance {uart_loopback_top.u_uart_recv} parameter value:
+    CLK_FREQ = 32'b00000010111110101111000010000000
+    UART_BPS = 32'b00000000000000011100001000000000</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0004: [C:/Users/93462/PdsProject/fpga-learn/rtl/uart_loopback_top.v(line number: 42)] Elaborating instance u_uart_send</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0003: [C:/Users/93462/PdsProject/fpga-learn/rtl/uart_send.v(line number: 1)] Elaborating module uart_send</data>
+        </row>
+        <row>
+            <data message="4">Module instance {uart_loopback_top.u_uart_send} parameter value:
+    CLK_FREQ = 32'b00000010111110101111000010000000
+    UART_BPS = 32'b00000000000000011100001000000000</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0004: [C:/Users/93462/PdsProject/fpga-learn/rtl/uart_loopback_top.v(line number: 53)] Elaborating instance u_uart_loop</data>
+        </row>
+        <row>
+            <data message="4">Verilog-0003: [C:/Users/93462/PdsProject/fpga-learn/rtl/uart_loop.v(line number: 1)] Elaborating module uart_loop</data>
+        </row>
+        <row>
+            <data message="4">Adm-6003: Trying to disconnect un-connected pin 'Z[0]' of instance 'N154'.</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N154 (bmsWIDEMUX).</data>
+        </row>
+        <row>
+            <data message="4">Adm-6003: Trying to disconnect un-connected pin 'Z[0]' of instance 'N212'.</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N212 (bmsWIDEMUX).</data>
+        </row>
+        <row>
+            <data message="4">Adm-6003: Trying to disconnect un-connected pin 'Z[0]' of instance 'N204'.</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N204 (bmsWIDEMUX).</data>
+        </row>
+        <row>
+            <data message="4">Adm-6003: Trying to disconnect un-connected pin 'Z[0]' of instance 'N196'.</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N196 (bmsWIDEMUX).</data>
+        </row>
+        <row>
+            <data message="4">Adm-6003: Trying to disconnect un-connected pin 'Z[0]' of instance 'N188'.</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N188 (bmsWIDEMUX).</data>
+        </row>
+        <row>
+            <data message="4">Adm-6003: Trying to disconnect un-connected pin 'Z[0]' of instance 'N180'.</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N180 (bmsWIDEMUX).</data>
+        </row>
+        <row>
+            <data message="4">Adm-6003: Trying to disconnect un-connected pin 'Z[0]' of instance 'N172'.</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N172 (bmsWIDEMUX).</data>
+        </row>
+        <row>
+            <data message="4">Adm-6003: Trying to disconnect un-connected pin 'Z[0]' of instance 'N164'.</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N164 (bmsWIDEMUX).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N100 (bmsREDAND).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N104 (bmsREDAND).</data>
+        </row>
+        <row>
+            <data message="4">Adm-6003: Trying to disconnect un-connected pin 'Z[0]' of instance 'N125'.</data>
         </row>
     </table>
     <general_container id="compile_settings">
@@ -59,7 +167,7 @@
                 </row>
                 <row>
                     <data>Top Module</data>
-                    <data>flow_ledN</data>
+                    <data>uart_loopback_top</data>
                 </row>
             </table>
         </table_container>

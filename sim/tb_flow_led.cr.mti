@@ -1,8 +1,27 @@
-C:/Users/93462/PdsProject/fpga-learn/rtl/flow_ledN.v {1 {vlog -work work -vopt -stats=none C:/Users/93462/PdsProject/fpga-learn/rtl/flow_ledN.v
+C:/Users/93462/PdsProject/fpga-learn/sim/Present_tb.v {1 {vlog -work work -vopt -stats=none C:/Users/93462/PdsProject/fpga-learn/sim/Present_tb.v
 Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
--- Compiling module flow_led
+-- Compiling module pLayer
+-- Compiling module PresentRound
+-- Compiling module Present
+-- Compiling module test
 
 Top level modules:
-	flow_led
+	test
+
+} {} {}} C:/Users/93462/PdsProject/fpga-learn/sim/PresentRound_tb.v {1 {vlog -work work -vopt -stats=none C:/Users/93462/PdsProject/fpga-learn/sim/PresentRound_tb.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module pLayer
+-- Compiling module PresentRound
+-- Compiling module PresentRound_tb
+
+Top level modules:
+	PresentRound_tb
+
+} {} {}} C:/Users/93462/PdsProject/fpga-learn/rtl/pLayer.v {1 {vlog -work work -vopt -stats=none {C:\Users\93462\PdsProject\fpga-learn\rtl\pLayer.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module pLayer
+
+Top level modules:
+	pLayer
 
 } {} {}}
