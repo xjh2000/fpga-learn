@@ -8,9 +8,6 @@ module p_top (output out_result,
     reg [23:0] counter;
     wire [0:63] result; /*synthesis syn_keep = 1*/
     
-    initial begin
-        clk = 1'h0;
-    end
     
     assign out_result = (result == 64'h3333_DCD3_2132_10D2)?1'b1:1'b0;
     
@@ -30,6 +27,6 @@ module p_top (output out_result,
     .result(result),
     .state(state),
     .keys(keys),
-    .clk(clk));
+    .sys_clk(clk));
     
-endmodule //PresentFpga
+endmodule 
