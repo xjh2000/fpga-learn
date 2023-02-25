@@ -1,4 +1,4 @@
-##### Written on 2023/02/12 19:36:59 ###############################
+##### Written on 2023/02/25 11:15:59 ###############################
 
 
 ##### INFO ##################################################
@@ -14,7 +14,7 @@ Constraint File(s) :
 
 ##### SUMMARY ######################################################
 
-Found 0 error(s), 0 critical warning(s), 1 warning(s), out of 13 constraint(s)
+Found 0 error(s), 0 critical warning(s), 2 warning(s), out of 6 constraint(s)
 
 
 Inapplicable constraints(except overwritten constraints):
@@ -36,6 +36,7 @@ Constraints with issues:
 
 
 
+W: ConstraintEditor-4019: Port 'out_result' unspecified I/O constraint.
 W: ConstraintEditor-4019: Port 'sys_rst' unspecified I/O constraint.
 
 

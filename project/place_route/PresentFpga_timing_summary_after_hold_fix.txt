@@ -40,10 +40,10 @@ Setup Summary(Fast Corner):
                                                                           TNS Failing      TNS Total
  Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
 ----------------------------------------------------------------------------------------------------
- sys_clk                sys_clk                     18.008       0.000              0           1638
- DebugCore_JCLK         DebugCore_JCLK              23.160       0.000              0           1037
- DebugCore_CAPTURE      DebugCore_JCLK              20.549       0.000              0             96
- DebugCore_JCLK         DebugCore_CAPTURE           46.643       0.000              0             16
+ sys_clk                sys_clk                     17.611       0.000              0           1782
+ DebugCore_JCLK         DebugCore_JCLK              22.902       0.000              0           1037
+ DebugCore_CAPTURE      DebugCore_JCLK              21.225       0.000              0             96
+ DebugCore_JCLK         DebugCore_CAPTURE           47.821       0.000              0             16
 ====================================================================================================
 
 Hold Summary(Fast Corner):
@@ -51,10 +51,10 @@ Hold Summary(Fast Corner):
                                                                           THS Failing      THS Total
  Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
 ----------------------------------------------------------------------------------------------------
- sys_clk                sys_clk                      0.195       0.000              0           1638
- DebugCore_JCLK         DebugCore_JCLK               0.281       0.000              0           1037
- DebugCore_CAPTURE      DebugCore_JCLK              24.998       0.000              0             96
- DebugCore_JCLK         DebugCore_CAPTURE            0.356       0.000              0             16
+ sys_clk                sys_clk                      0.212       0.000              0           1782
+ DebugCore_JCLK         DebugCore_JCLK               0.284       0.000              0           1037
+ DebugCore_CAPTURE      DebugCore_JCLK              24.991       0.000              0             96
+ DebugCore_JCLK         DebugCore_CAPTURE            0.311       0.000              0             16
 ====================================================================================================
 
 Recovery Summary(Fast Corner):
@@ -62,7 +62,7 @@ Recovery Summary(Fast Corner):
                                                                           TNS Failing      TNS Total
  Launch Clock           Capture Clock              WNS(ns)     TNS(ns)      Endpoints      Endpoints
 ----------------------------------------------------------------------------------------------------
- sys_clk                sys_clk                     17.708       0.000              0            733
+ sys_clk                sys_clk                     17.692       0.000              0            733
 ====================================================================================================
 
 Removal Summary(Fast Corner):
@@ -70,7 +70,7 @@ Removal Summary(Fast Corner):
                                                                           THS Failing      THS Total
  Launch Clock           Capture Clock              WHS(ns)     THS(ns)      Endpoints      Endpoints
 ----------------------------------------------------------------------------------------------------
- sys_clk                sys_clk                      0.414       0.000              0            733
+ sys_clk                sys_clk                      0.516       0.000              0            733
 ====================================================================================================
 
 Minimum Pulse Width Summary(Fast Corner):

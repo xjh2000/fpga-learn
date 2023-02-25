@@ -1,16 +1,14 @@
-`include "Present.v"
+`include "p.v"
 module PresentFpga (output out_result,
                     input sys_clk,
                     input sys_rst);
-    reg [0:63] state;
-    reg [0:79] keys;
+    reg [0:63] state; /*synthesis syn_preserve = 1*/
+    reg [0:79] keys; /*synthesis syn_preserve = 1*/
     reg  clk;
     reg [23:0] counter;
     wire [0:63] result; /*synthesis syn_keep = 1*/
     
     initial begin
-        state <= 64'hffff_ffff_ffff_ffff;
-        keys  <= 80'hffff_ffff_ffff_ffff_ffff;
         clk = 1'h0;
     end
     
@@ -21,18 +19,17 @@ module PresentFpga (output out_result,
         if (counter < 24'd100 - 1'd1) begin
             counter <= counter + 1'b1;
             end else begin
+            state   <= 64'hffff_ffff_ffff_ffff;
+            keys    <= 80'hffff_ffff_ffff_ffff_ffff;
             clk     <= ~clk;
             counter <= 24'd0;
-        end
-        
-        
-        
+        end  
     end
     
-    Present u_present(
+    p u_p(
     .result(result),
     .state(state),
     .keys(keys),
     .clk(clk));
-    
+
 endmodule //PresentFpga

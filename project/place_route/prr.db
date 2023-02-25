@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <tables>
-    <table id="pnr_io_report" title="IO Report" column_number="17">
+    <table id="pnr_io_report" title="IO Report" column_number="17" abnormal="">
         <column_headers>
             <data>PORT</data>
             <data>DIRECTION</data>
@@ -20,6 +20,25 @@
             <data>OPEN_DRAIN</data>
             <data>CONSTRAINT</data>
         </column_headers>
+        <row color="4294901760">
+            <data>out_result</data>
+            <data>output</data>
+            <data>J3</data>
+            <data>BANKL1</data>
+            <data>3.3</data>
+            <data>LVCMOS33</data>
+            <data>8</data>
+            <data>NONE</data>
+            <data>SLOW</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>NA</data>
+            <data>OFF</data>
+            <data>NO</data>
+        </row>
         <row>
             <data>sys_clk</data>
             <data>input</data>
@@ -37,63 +56,6 @@
             <data>NA</data>
             <data>NA</data>
             <data>NA</data>
-            <data>YES</data>
-        </row>
-        <row>
-            <data>sys_rst_n</data>
-            <data>input</data>
-            <data>G5</data>
-            <data>BANKL1</data>
-            <data>1.5</data>
-            <data>LVCMOS15</data>
-            <data>NA</data>
-            <data>NONE</data>
-            <data>NA</data>
-            <data>NOHYS</data>
-            <data>NA</data>
-            <data>NA</data>
-            <data>NA</data>
-            <data>NA</data>
-            <data>NA</data>
-            <data>NA</data>
-            <data>YES</data>
-        </row>
-        <row>
-            <data>uart_rxd</data>
-            <data>input</data>
-            <data>R10</data>
-            <data>BANKR2</data>
-            <data>3.3</data>
-            <data>LVCMOS33</data>
-            <data>NA</data>
-            <data>NONE</data>
-            <data>NA</data>
-            <data>NOHYS</data>
-            <data>NA</data>
-            <data>NA</data>
-            <data>NA</data>
-            <data>NA</data>
-            <data>NA</data>
-            <data>NA</data>
-            <data>YES</data>
-        </row>
-        <row>
-            <data>uart_txd</data>
-            <data>output</data>
-            <data>T10</data>
-            <data>BANKR2</data>
-            <data>3.3</data>
-            <data>LVCMOS33</data>
-            <data>8</data>
-            <data>NONE</data>
-            <data>SLOW</data>
-            <data>NA</data>
-            <data>NA</data>
-            <data>NA</data>
-            <data>NA</data>
-            <data>NA</data>
-            <data>NA</data>
-            <data>OFF</data>
             <data>YES</data>
         </row>
     </table>
@@ -438,9 +400,9 @@
             <data>G5</data>
             <data>IOBS_0_241</data>
             <data>BANKL1</data>
-            <data>sys_rst_n</data>
-            <data>input</data>
-            <data>YES</data>
+            <data></data>
+            <data></data>
+            <data></data>
         </row>
         <row>
             <data>L4</data>
@@ -582,9 +544,9 @@
             <data>J3</data>
             <data>IOBD_0_206</data>
             <data>BANKL1</data>
-            <data></data>
-            <data></data>
-            <data></data>
+            <data>out_result</data>
+            <data>output</data>
+            <data>NO</data>
         </row>
         <row>
             <data>H3</data>
@@ -1710,17 +1672,17 @@
             <data>R10</data>
             <data>IOBD_152_118</data>
             <data>BANKR2</data>
-            <data>uart_rxd</data>
-            <data>input</data>
-            <data>YES</data>
+            <data></data>
+            <data></data>
+            <data></data>
         </row>
         <row>
             <data>T10</data>
             <data>IOBS_152_117</data>
             <data>BANKR2</data>
-            <data>uart_txd</data>
-            <data>output</data>
-            <data>YES</data>
+            <data></data>
+            <data></data>
+            <data></data>
         </row>
         <row>
             <data>U16</data>
@@ -2048,56 +2010,56 @@
         </row>
         <row>
             <data>Use of BKCL</data>
-            <data>3</data>
+            <data>1</data>
             <data>6</data>
-            <data>50</data>
+            <data>17</data>
         </row>
         <row>
             <data>Use of CLMA</data>
-            <data>26</data>
+            <data>388</data>
             <data>3274</data>
-            <data>1</data>
+            <data>12</data>
             <row>
                 <data>  FF</data>
-                <data>58</data>
+                <data>1206</data>
                 <data>19644</data>
-                <data>1</data>
+                <data>7</data>
             </row>
             <row>
                 <data>  LUT</data>
-                <data>74</data>
+                <data>997</data>
                 <data>13096</data>
-                <data>1</data>
+                <data>8</data>
             </row>
             <row>
                 <data>  LUT-FF pairs</data>
-                <data>39</data>
+                <data>730</data>
                 <data>13096</data>
-                <data>1</data>
+                <data>6</data>
             </row>
         </row>
         <row>
             <data>Use of CLMS</data>
-            <data>5</data>
+            <data>130</data>
             <data>1110</data>
-            <data>1</data>
+            <data>12</data>
             <row>
                 <data>  FF</data>
-                <data>12</data>
+                <data>399</data>
                 <data>6660</data>
-                <data>1</data>
+                <data>6</data>
             </row>
             <row>
                 <data>  LUT</data>
-                <data>15</data>
+                <data>351</data>
                 <data>4440</data>
-                <data>1</data>
+                <data>8</data>
             </row>
             <row>
                 <data>  LUT-FF pairs</data>
-                <data>3</data>
+                <data>273</data>
                 <data>4440</data>
-                <data>1</data>
+                <data>7</data>
             </row>
             <row>
                 <data>  Distributed RAM</data>
@@ -2126,9 +2088,9 @@
         </row>
         <row>
             <data>Use of DRM</data>
-            <data>0</data>
+            <data>9</data>
             <data>48</data>
-            <data>0</data>
+            <data>19</data>
         </row>
         <row>
             <data>Use of FLSIF</data>
@@ -2156,9 +2118,9 @@
         </row>
         <row>
             <data>Use of IO</data>
-            <data>4</data>
-            <data>240</data>
             <data>2</data>
+            <data>240</data>
+            <data>1</data>
             <row>
                 <data>  IOBD</data>
                 <data>2</data>
@@ -2173,9 +2135,9 @@
             </row>
             <row>
                 <data>  IOBS</data>
-                <data>2</data>
+                <data>0</data>
                 <data>114</data>
-                <data>2</data>
+                <data>0</data>
             </row>
         </row>
         <row>
@@ -2204,9 +2166,9 @@
         </row>
         <row>
             <data>Use of IOL</data>
-            <data>4</data>
-            <data>240</data>
             <data>2</data>
+            <data>240</data>
+            <data>1</data>
         </row>
         <row>
             <data>Use of IPAL</data>
@@ -2240,9 +2202,9 @@
         </row>
         <row>
             <data>Use of RCKB</data>
-            <data>1</data>
+            <data>0</data>
             <data>24</data>
-            <data>5</data>
+            <data>0</data>
         </row>
         <row>
             <data>Use of RCKBMUX_TEST</data>
@@ -2258,9 +2220,9 @@
         </row>
         <row>
             <data>Use of SCANCHAIN</data>
-            <data>0</data>
+            <data>1</data>
             <data>4</data>
-            <data>0</data>
+            <data>25</data>
         </row>
         <row>
             <data>Use of START</data>
@@ -2276,9 +2238,9 @@
         </row>
         <row>
             <data>Use of USCM</data>
-            <data>1</data>
+            <data>3</data>
             <data>20</data>
-            <data>5</data>
+            <data>15</data>
         </row>
         <row>
             <data>Use of USCMMUX_TEST</data>
@@ -2323,9 +2285,12 @@
             <data>USCM</data>
         </column_headers>
         <row>
-            <data>uart_loopback_top</data>
-            <data>86</data>
-            <data>70</data>
+            <data>PresentFpga</data>
+            <data>1327</data>
+            <data>1605</data>
+            <data>0</data>
+            <data>0</data>
+            <data>9</data>
             <data>0</data>
             <data>0</data>
             <data>0</data>
@@ -2333,10 +2298,9 @@
             <data>0</data>
             <data>0</data>
             <data>0</data>
+            <data>2</data>
             <data>0</data>
             <data>0</data>
-            <data>0</data>
-            <data>4</data>
             <data>0</data>
             <data>0</data>
             <data>0</data>
@@ -2346,13 +2310,11 @@
             <data>1</data>
             <data>0</data>
             <data>0</data>
-            <data>0</data>
-            <data>0</data>
-            <data>1</data>
+            <data>3</data>
             <row>
-                <data>u_uart_loop</data>
-                <data>3</data>
-                <data>12</data>
+                <data>u_p</data>
+                <data>153</data>
+                <data>152</data>
                 <data>0</data>
                 <data>0</data>
                 <data>0</data>
@@ -2378,9 +2340,12 @@
                 <data>0</data>
             </row>
             <row>
-                <data>u_uart_recv</data>
-                <data>47</data>
-                <data>33</data>
+                <data>u_CORES</data>
+                <data>1148</data>
+                <data>1301</data>
+                <data>0</data>
+                <data>0</data>
+                <data>9</data>
                 <data>0</data>
                 <data>0</data>
                 <data>0</data>
@@ -2397,38 +2362,7 @@
                 <data>0</data>
                 <data>0</data>
                 <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-            </row>
-            <row>
-                <data>u_uart_send</data>
-                <data>36</data>
-                <data>25</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
-                <data>0</data>
+                <data>1</data>
                 <data>0</data>
                 <data>0</data>
                 <data>0</data>
@@ -2445,9 +2379,9 @@
             <data>RAM(GB)</data>
         </column_headers>
         <row>
-            <data>2.71875</data>
-            <data>7</data>
-            <data>435,654,656</data>
+            <data>4.57812</data>
+            <data>16</data>
+            <data>501,170,176</data>
             <data>WINDOWS 10 x86_64</data>
             <data>12th Gen Intel(R) Core(TM) i9-12900H</data>
             <data>31</data>
@@ -2459,7 +2393,22 @@
             <data message="4">Parameter configuration file C:/Users/93462/PdsProject/fpga-learn/project/testparam.txt cannot open.</data>
         </row>
         <row>
+            <data message="5">ConstraintEditor-4019: Port 'out_result' unspecified I/O constraint.</data>
+        </row>
+        <row>
+            <data message="5">ConstraintEditor-4019: Port 'sys_rst' unspecified I/O constraint.</data>
+        </row>
+        <row>
             <data message="4">Column Clock Check close.</data>
+        </row>
+        <row>
+            <data message="6">Route-2036: The clock path from u_CORES/u_GTP_SCANCHAIN_PG/scanchain:CAPDR to clkbufg_3/gopclkbufg:CLK is routed by SRB.</data>
+        </row>
+        <row>
+            <data message="6">Route-2036: The clock path from u_CORES/u_GTP_SCANCHAIN_PG/scanchain:TCK_USER to clkbufg_4/gopclkbufg:CLK is routed by SRB.</data>
+        </row>
+        <row>
+            <data message="6">Route-2036: The clock path from clk/opit_0_L5Q:Q to u_p/cnt[5]/opit_0_L5Q:CLK is routed by SRB.</data>
         </row>
     </table>
     <general_container id="pnr_settings">
@@ -2475,7 +2424,7 @@
                 </row>
                 <row>
                     <data>Top Module</data>
-                    <data>uart_loopback_top</data>
+                    <data>PresentFpga</data>
                 </row>
             </table>
         </table_container>
@@ -2732,10 +2681,26 @@
                     <data>SiteOfDriverInst</data>
                 </column_headers>
                 <row>
-                    <data>clkbufg_0/gopclkbufg</data>
-                    <data>USCM_74_104</data>
+                    <data>clkbufg_3/gopclkbufg</data>
+                    <data>USCM_74_106</data>
                     <data>ntclkbufg_0</data>
-                    <data>64</data>
+                    <data>11</data>
+                    <data>u_CORES/u_GTP_SCANCHAIN_PG/scanchain</data>
+                    <data>SCANCHAIN_48_328</data>
+                </row>
+                <row>
+                    <data>clkbufg_4/gopclkbufg</data>
+                    <data>USCM_74_105</data>
+                    <data>ntclkbufg_1</data>
+                    <data>319</data>
+                    <data>u_CORES/u_GTP_SCANCHAIN_PG/scanchain</data>
+                    <data>SCANCHAIN_48_328</data>
+                </row>
+                <row>
+                    <data>clkbufg_5/gopclkbufg</data>
+                    <data>USCM_74_104</data>
+                    <data>ntclkbufg_2</data>
+                    <data>1125</data>
                     <data>sys_clk_ibuf/opit_1</data>
                     <data>IOL_7_298</data>
                 </row>

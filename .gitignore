@@ -5,3 +5,5 @@ logbackup/
 *.log
 
 .idea
+
+*.out

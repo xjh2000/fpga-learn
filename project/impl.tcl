@@ -227,3 +227,78 @@ dev_map
 pnr 
 report_timing 
 gen_bit_stream 
+remove_design -verilog "C:/Users/93462/PdsProject/fpga-learn/rtl/uart_loopback_top.v"
+add_design "C:/Users/93462/PdsProject/fpga-learn/rtl/PresentFpga.v"
+add_design "C:/Users/93462/PdsProject/fpga-learn/rtl/pLayer.v"
+add_design "C:/Users/93462/PdsProject/fpga-learn/rtl/Present.v"
+add_design "C:/Users/93462/PdsProject/fpga-learn/rtl/PresentRound.v"
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module PresentFpga
+remove_design -verilog "C:/Users/93462/PdsProject/fpga-learn/rtl/PresentFpga.v"
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module Present
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module Present
+remove_design -verilog "C:/Users/93462/PdsProject/fpga-learn/rtl/PresentRound.v"
+remove_design -verilog "C:/Users/93462/PdsProject/fpga-learn/rtl/pLayer.v"
+remove_design -verilog "C:/Users/93462/PdsProject/fpga-learn/rtl/Present.v"
+add_design "C:/Users/93462/PdsProject/fpga-learn/rtl/PresentFpga.v"
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module PresentFpga
+synthesize -ads -selected_syn_tool_opt 2 
+synthesize -ads -selected_syn_tool_opt 2 
+dev_map 
+pnr 
+report_timing 
+gen_bit_stream 
+add_fic "C:/Users/93462/PdsProject/fpga-learn/project/synthesize/PresentFpga_syn.fic"
+gen_bit_stream 
+pnr 
+dev_map 
+pnr 
+report_timing 
+gen_bit_stream 
+dev_map 
+add_design "C:/Users/93462/PdsProject/fpga-learn/rtl/uart_loopback_top.v"
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module PresentFpga
+synthesize -ads -selected_syn_tool_opt 2 
+dev_map 
+dev_map 
+dev_map 
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module PresentFpga
+synthesize -ads -selected_syn_tool_opt 2 
+dev_map 
+pnr 
+report_timing 
+gen_bit_stream 
+gen_bit_stream 
+dev_map 
+pnr 
+report_timing 
+gen_bit_stream 
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module PresentFpga
+synthesize -ads -selected_syn_tool_opt 2 
+dev_map 
+pnr 
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module PresentFpga
+synthesize -ads -selected_syn_tool_opt 2 
+dev_map 
+pnr 
+report_timing 
+gen_bit_stream 
+dev_map 
+pnr 
+report_timing 
+gen_bit_stream 
+set_arch -family Logos -device PGL22G -speedgrade -6 -package MBG324
+compile -top_module PresentFpga
+synthesize -ads -selected_syn_tool_opt 2 
+dev_map 
+dev_map 
+pnr 
+report_timing 
+gen_bit_stream 

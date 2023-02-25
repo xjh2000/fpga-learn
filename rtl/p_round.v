@@ -1,16 +1,17 @@
-`include "pLayer.v"
+`include "p_layer.v"
 
-module PresentRound(output [0:63] res,          // next cipher text
-                    output [0:79] r_keys,       // next round sub key
-                    input [0:63] state,         // current cipher text
-                    input [0:79] keys,          // current key
-                    input [0:4] round_counter); // round counter
+module p_round(input [0:63] state,        // current cipher text
+                     input [0:79] keys,         // current key
+                     input [0:4] round_counter, // round counter
+                     output [0:63] res,         // next cipher text
+                     output [0:79] r_keys);     // next round key
 
 
 wire   [0:63] tem0;
 wire   [0:63] tem1;
 
 reg [0:3] sbox[0:15]; // s box for sBoxLayer
+
 initial begin
     sbox[0]  = 12;  sbox[1]  = 5; sbox[2]  = 6;  sbox[3]  = 11;
     sbox[4]  = 9;   sbox[5]  = 0; sbox[6]  = 10; sbox[7]  = 13;
@@ -30,9 +31,9 @@ sbox[tem0[48:51]],sbox[tem0[52:55]],sbox[tem0[56:59]],sbox[tem0[60:63]]
 };
 
 // pLayer
-pLayer      u_pLayer(
-.res(res),
-.state(tem1)
+p_layer      u_pLayer(
+.state(tem1),
+.res(res)
 );
 
 // KeyExtend

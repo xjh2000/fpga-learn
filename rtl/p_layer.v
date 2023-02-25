@@ -1,5 +1,5 @@
-module pLayer(output [0:63] res,
-              input [0:63] state);
+module p_layer(input [0:63] state, // origin data
+               output wire [0:63] res); // p layer changed data 
 
 assign   res = {
 state[0],state[4],state[8],state[12],state[16],state[20],state[24],state[28],
