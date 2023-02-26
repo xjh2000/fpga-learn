@@ -18,7 +18,7 @@ initial begin
     cnt = 1;
 end
 
-assign  result = end_conver(res ^k[0:63]);
+assign  result = res ^k[0:63];
 
 // if encrypt_start is up, update the count,res,keys
 always @(posedge  sys_clk)  begin
@@ -44,15 +44,6 @@ p_round   u_p_round(
 .keys(k),
 .round_counter(cnt[3:7]));
 
-function [0:63]     end_conver ;
-    input     [0:63] data_in ;
-    parameter         MASK = 32'h3 ;
-    integer           k ;
-    begin
-        for(k = 0; k<64; k = k+1) begin
-            end_conver[63-k] = data_in[k] ;
-        end
-    end
-endfunction
+
 
 endmodule

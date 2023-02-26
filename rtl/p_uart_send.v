@@ -58,7 +58,7 @@ always @(posedge sys_clk or negedge sys_rst_n) begin
     else if (en_flag) begin
         tx_flag <= 1'b1;
     end
-        else if ((tx_cnt == 4'd8)) begin
+        else if ((tx_cnt == 4'd7)) begin
         tx_flag <= 1'b0;
         end
     else begin
