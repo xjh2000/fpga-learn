@@ -1,4 +1,4 @@
-`include "uart_recv.v"
+`include "p_uart_recv.v"
 `include "uart_loop.v"
 `include "uart_send.v"
 
@@ -13,20 +13,20 @@ module uart_loopback_top(input sys_clk,    // 50 M system clock
     
     // wire define
     wire       uart_recv_done;              // receive done flag
-    wire [7:0] uart_recv_data;              // receive data buff
+    wire [63:0] uart_recv_data;    /*synthesis syn_keep = 1*/        // receive data buff
     wire       uart_send_en;                // send start flag
     wire [7:0] uart_send_data;              // send data buff
-    wire       uart_tx_busy;                // when send is busy 
+    wire       uart_tx_busy;                // when send is busy
     
     //*****************************************************
     //**                    main code
     //*****************************************************
     
     // uart receive module
-    uart_recv #(
+    p_uart_recv #(
     .CLK_FREQ       (CLK_FREQ),
     .UART_BPS       (UART_BPS))
-    u_uart_recv(
+    u_p_uart_recv(
     .sys_clk        (sys_clk),
     .sys_rst_n      (sys_rst_n),
     
@@ -54,12 +54,12 @@ module uart_loopback_top(input sys_clk,    // 50 M system clock
     .sys_clk        (sys_clk),
     .sys_rst_n      (sys_rst_n),
     
-    .recv_done      (uart_recv_done),   
-    .recv_data      (uart_recv_data),   
+    .recv_done      (uart_recv_done),
+    .recv_data      (uart_recv_data[7:0]),
     
-    .tx_busy        (uart_tx_busy),     
-    .send_en        (uart_send_en),     
-    .send_data      (uart_send_data)    
+    .tx_busy        (uart_tx_busy),
+    .send_en        (uart_send_en),
+    .send_data      (uart_send_data)
     );
     
 endmodule
