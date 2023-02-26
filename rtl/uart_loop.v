@@ -1,10 +1,10 @@
 module uart_loop(input sys_clk,               // system clock
                  input sys_rst_n,             // reset sign
                  input recv_done,             // reveive done
-                 input [7:0] recv_data,       // receive data buff
+                 input [63:0] recv_data,       // receive data buff
                  input tx_busy,               // send busy
                  output reg send_en,          // send start
-                 output reg [7:0] send_data); // send buff
+                 output reg [63:0] send_data); // send buff
     
     //reg define
     reg recv_done_d0;

@@ -1,6 +1,6 @@
 `include "p_uart_recv.v"
 `include "uart_loop.v"
-`include "uart_send.v"
+`include "p_uart_send.v"
 
 module uart_loopback_top(input sys_clk,    // 50 M system clock
                          input sys_rst_n,  // reset sign
@@ -15,7 +15,7 @@ module uart_loopback_top(input sys_clk,    // 50 M system clock
     wire       uart_recv_done;              // receive done flag
     wire [63:0] uart_recv_data;    /*synthesis syn_keep = 1*/        // receive data buff
     wire       uart_send_en;                // send start flag
-    wire [7:0] uart_send_data;              // send data buff
+    wire [63:0] uart_send_data;              // send data buff
     wire       uart_tx_busy;                // when send is busy
     
     //*****************************************************
@@ -36,10 +36,10 @@ module uart_loopback_top(input sys_clk,    // 50 M system clock
     );
     
     // uart send module
-    uart_send #(
+    p_uart_send #(
     .CLK_FREQ       (CLK_FREQ),
     .UART_BPS       (UART_BPS))
-    u_uart_send(
+    u_p_uart_send(
     .sys_clk        (sys_clk),
     .sys_rst_n      (sys_rst_n),
     
@@ -55,7 +55,7 @@ module uart_loopback_top(input sys_clk,    // 50 M system clock
     .sys_rst_n      (sys_rst_n),
     
     .recv_done      (uart_recv_done),
-    .recv_data      (uart_recv_data[7:0]),
+    .recv_data      (uart_recv_data),
     
     .tx_busy        (uart_tx_busy),
     .send_en        (uart_send_en),
