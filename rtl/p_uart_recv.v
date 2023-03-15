@@ -1,4 +1,3 @@
-`include "uart_recv.v"
 
 module p_uart_recv (input sys_clk,                // system clock
                     input sys_rst_n,              // reset sign

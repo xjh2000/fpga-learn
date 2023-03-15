@@ -1,7 +1,3 @@
-`include "p_uart_recv.v"
-`include "p_loop.v"
-`include "p_uart_send.v"
-
 module top(input sys_clk,    // 50 M system clock
            input sys_rst_n,  // reset sign
            input uart_rxd,   // uart receive
@@ -50,7 +46,7 @@ module top(input sys_clk,    // 50 M system clock
     );
     
     // uart loop module
-    p_loop u_p_loop(
+    i_loop u_i_loop(
     .sys_clk        (sys_clk),
     .sys_rst_n      (sys_rst_n),
     

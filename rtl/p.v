@@ -1,5 +1,3 @@
-`include "p_round.v"
-
 module p(input [0:63] state,     // PlainText
          input [0:79] keys,      // key
          input sys_clk,          // clock
@@ -27,7 +25,7 @@ always @(posedge  sys_clk)  begin
     k   <= ((encrypt_start) ?r_keys:keys) ;
 end
 
-
+// end encrypt if encrypt finish by cnt
 always @(posedge  sys_clk) begin
     if (cnt == 31 && encrypt_start) begin
         encrypt_end = 1;

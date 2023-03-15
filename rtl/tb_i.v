@@ -1,5 +1,6 @@
 `timescale  1ns / 1ps
-module tb_p();
+
+module tb_i();
     parameter PERIOD = 10;
     reg clk;
     reg rst_n;
@@ -8,9 +9,7 @@ module tb_p();
     reg [79:0] keys;
     reg [23:0] counter;
     wire  encrypt_end;
-    wire [63:0] d_result;   // big encode
     wire [63:0] result;     // small encode
-    
     // generate colck
     initial begin
         rst_n         = 1'b1;
@@ -28,7 +27,6 @@ module tb_p();
         encrypt_start = 1'b1;
     end
     
-    assign result = end_conver(d_result);
     
     always @(posedge clk) begin
         if (encrypt_end) begin
@@ -36,8 +34,8 @@ module tb_p();
         end
     end
     
-    p u_p(
-    .result(d_result),
+    IVLBC u_i(
+    .result(result),
     .state(state),
     .encrypt_start(encrypt_start),
     .encrypt_end(encrypt_end),
@@ -46,17 +44,8 @@ module tb_p();
     
     initial begin
         $dumpfile("./wave.vcd");
-        $dumpvars(0, tb_p);
+        $dumpvars(0, tb_i);
         #(PERIOD*40) $finish;
     end
-    function [0:63]     end_conver ;
-        input     [0:63] data_in ;
-        parameter         MASK = 32'h3 ;
-        integer           k ;
-        begin
-            for(k = 0; k<64; k = k+1) begin
-                end_conver[63-k] = data_in[k] ;
-            end
-        end
-    endfunction
+    
 endmodule

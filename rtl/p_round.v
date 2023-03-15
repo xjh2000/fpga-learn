@@ -1,5 +1,3 @@
-`include "p_layer.v"
-
 module p_round(input [0:63] state,        // current cipher text
                      input [0:79] keys,         // current key
                      input [0:4] round_counter, // round counter

@@ -1,4 +1,4 @@
-module p_loop(input sys_clk,                // system clock
+module i_loop(input sys_clk,                // system clock
               input sys_rst_n,              // reset sign
               input recv_done,              // reveive done
               input [63:0] recv_data,       // receive data buff
@@ -17,8 +17,8 @@ module p_loop(input sys_clk,                // system clock
     //wire define
     wire recv_done_flag;
     
-    reg [0:63] state;
-    reg [0:79] keys; /*synthesis syn_preserve = 1*/
+    reg [63:0] state;
+    reg [79:0] keys; /*synthesis syn_preserve = 1*/
     reg  clk;
     reg [23:0] counter;
     
@@ -73,7 +73,7 @@ module p_loop(input sys_clk,                // system clock
                 if (tx_ready && (~tx_busy) && (encrypt_end)) begin
                     tx_ready  <= 1'b0;
                     send_en   <= 1'b1;
-                    send_data <= end_conver(result);
+                    send_data <= result;
                 end
                     if (encrypt_end) begin
                         encrypt_start <= 1'b0;
@@ -83,22 +83,12 @@ module p_loop(input sys_clk,                // system clock
         end
     end
     
-    p u_p(
+    IVLBC u_i(
     .result(result),
     .state(state),
     .encrypt_start(encrypt_start),
     .encrypt_end(encrypt_end),
     .keys(keys),
     .sys_clk(clk));
-    
-    function [63:0]     end_conver ;
-    input     [0:63] data_in ;
-    parameter         MASK = 32'h3 ;
-    integer           k ;
-    begin
-        for(k = 0; k<64; k = k+1) begin
-            end_conver[63-k] = data_in[k] ;
-        end
-    end
-endfunction
+
 endmodule

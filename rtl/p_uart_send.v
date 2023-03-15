@@ -1,4 +1,3 @@
-`include "uart_send.v"
 module p_uart_send (input	 sys_clk,           // system clock
                     input sys_rst_n,          // reset sign
                     input uart_en,            // uart start sign
