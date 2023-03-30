@@ -38,8 +38,6 @@ module tb_i();
     .Plain(state),
     .Key(keys),
     .clock(clk),
-    .encrypt_start(encrypt_start),
-    .encrypt_end(encrypt_end),
     .Cipher(result)
     );
     
