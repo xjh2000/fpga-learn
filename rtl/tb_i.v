@@ -5,11 +5,11 @@ module tb_i();
     reg clk;
     reg rst_n;
     reg encrypt_start;
-    reg [63:0] state;
-    reg [79:0] keys;
+    reg [0:127] state;
+    reg [0:63] keys;
     reg [23:0] counter;
     wire  encrypt_end;
-    wire [63:0] result;     // small encode
+    wire [0:127] result;
     // generate colck
     initial begin
         rst_n         = 1'b1;
@@ -21,8 +21,8 @@ module tb_i();
     end
     
     initial begin
-        state = 64'hffff_ffff_ffff_ffff;
-        keys  = 80'hffff_ffff_ffff_ffff_ffff;
+        state = 128'hffff_ffff_ffff_ffff_ffff_ffff_ffff_ffff;
+        keys  = 64'h0000_0000_0000_0000;
         #(PERIOD)
         encrypt_start = 1'b1;
     end
@@ -34,13 +34,15 @@ module tb_i();
         end
     end
     
-    IVLBC u_i(
-    .result(result),
-    .state(state),
+    encrytion u_d(
+    .Plain(state),
+    .Key(keys),
+    .clock(clk),
     .encrypt_start(encrypt_start),
     .encrypt_end(encrypt_end),
-    .keys(keys),
-    .sys_clk(clk));
+    .Cipher(result)
+    );
+    
     
     initial begin
         $dumpfile("./wave.vcd");
