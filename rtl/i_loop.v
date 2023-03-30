@@ -1,9 +1,9 @@
-module i_loop(input sys_clk,                // system clock
-              input sys_rst_n,              // reset sign
-              input recv_done,              // reveive done
+module i_loop(input sys_clk,                 // system clock
+              input sys_rst_n,               // reset sign
+              input recv_done,               // reveive done
               input [127:0] recv_data,       // receive data buff
-              input tx_busy,                // send busy
-              output reg send_en,           // send start
+              input tx_busy,                 // send busy
+              output reg send_en,            // send start
               output reg [127:0] send_data); // send buff
     
     //reg define
@@ -33,7 +33,7 @@ module i_loop(input sys_clk,                // system clock
         if (counter < 24'd100 - 1'd1) begin
             counter <= counter + 1'b1;
             end else begin
-            keys    <= 80'hffff_ffff_ffff_ffff_ffff;
+            keys    <= 64'h0000_0000_0000_0000;
             clk     <= ~clk;
             counter <= 24'd0;
         end
@@ -73,7 +73,7 @@ module i_loop(input sys_clk,                // system clock
                 if (tx_ready && (~tx_busy) && (encrypt_end)) begin
                     tx_ready  <= 1'b0;
                     send_en   <= 1'b1;
-                    send_data <= result;
+                    send_data <= end_conver(result);
                 end
                     if (encrypt_end) begin
                         encrypt_start <= 1'b0;
@@ -91,4 +91,14 @@ module i_loop(input sys_clk,                // system clock
     .encrypt_end(encrypt_end),   // encrypt finish
     .Cipher(result));
     
+    function [127:0]     end_conver ;
+        input     [0:127] data_in ;
+        parameter         MASK = 32'h3 ;
+        integer           k ;
+        begin
+            for(k = 0; k<128; k = k+1) begin
+                end_conver[127-k] = data_in[k] ;
+            end
+        end
+    endfunction
 endmodule
