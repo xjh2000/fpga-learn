@@ -1,12 +1,12 @@
 module p_uart_send (input	 sys_clk,           // system clock
                     input sys_rst_n,          // reset sign
                     input uart_en,            // uart start sign
-                    input [63:0] uart_din,    // uart will sended data
+                    input [127:0] uart_din,    // uart will sended data
                     output uart_tx_busy,      // uart send busy
                     output en_flag,
                     output reg tx_flag,       // sending flag
                     output reg [7:0] tx_data, // sending data
-                    output reg [3:0] tx_cnt,  // send bit count
+                    output reg [7:0] tx_cnt,  // send bit count
                     output uart_txd);         // uart send
 
 //parameter define
@@ -57,7 +57,7 @@ always @(posedge sys_clk or negedge sys_rst_n) begin
     else if (en_flag) begin
         tx_flag <= 1'b1;
     end
-        else if ((tx_cnt == 4'd7)) begin
+        else if ((tx_cnt == 8'd15)) begin
         tx_flag <= 1'b0;
         end
     else begin
@@ -106,14 +106,22 @@ always @(posedge sys_clk or negedge sys_rst_n) begin
     end
     else begin
         case (tx_cnt)
-            4'd0 : tx_data <= uart_din[7:0];
-            4'd1 : tx_data <= uart_din[15:8];
-            4'd2 : tx_data <= uart_din[23:16];
-            4'd3 : tx_data <= uart_din[31:24];
-            4'd4 : tx_data <= uart_din[39:32];
-            4'd5 : tx_data <= uart_din[47:40];
-            4'd6 : tx_data <= uart_din[55:48];
-            4'd7 : tx_data <= uart_din[63:56];
+            8'd0 : tx_data <= uart_din[7:0];
+            8'd1 : tx_data <= uart_din[15:8];
+            8'd2 : tx_data <= uart_din[23:16];
+            8'd3 : tx_data <= uart_din[31:24];
+            8'd4 : tx_data <= uart_din[39:32];
+            8'd5 : tx_data <= uart_din[47:40];
+            8'd6 : tx_data <= uart_din[55:48];
+            8'd7 : tx_data <= uart_din[63:56];
+            8'd8 : tx_data <= uart_din[71:64];
+            8'd9 : tx_data <= uart_din[79:72];
+            8'd10 : tx_data <= uart_din[87:80];
+            8'd11 : tx_data <= uart_din[95:88];
+            8'd12 : tx_data <= uart_din[103:96];
+            8'd13 : tx_data <= uart_din[111:104];
+            8'd14 : tx_data <= uart_din[119:112];
+            8'd15 : tx_data <= uart_din[127:120];
             default:;
         endcase
     end

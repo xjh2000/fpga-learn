@@ -1,10 +1,10 @@
 module i_loop(input sys_clk,                // system clock
               input sys_rst_n,              // reset sign
               input recv_done,              // reveive done
-              input [63:0] recv_data,       // receive data buff
+              input [127:0] recv_data,       // receive data buff
               input tx_busy,                // send busy
               output reg send_en,           // send start
-              output reg [63:0] send_data); // send buff
+              output reg [127:0] send_data); // send buff
     
     //reg define
     reg recv_done_d0;
@@ -17,12 +17,12 @@ module i_loop(input sys_clk,                // system clock
     //wire define
     wire recv_done_flag;
     
-    reg [63:0] state;
-    reg [79:0] keys; /*synthesis syn_preserve = 1*/
+    reg [127:0] state;
+    reg [63:0] keys; /*synthesis syn_preserve = 1*/
     reg  clk;
     reg [23:0] counter;
     
-    wire [0:63] result; /*synthesis syn_keep = 1*/
+    wire [0:127] result; /*synthesis syn_keep = 1*/
     
     // capture up edge
     assign recv_done_flag = (~recv_done_d1) & recv_done_d0;
@@ -83,12 +83,12 @@ module i_loop(input sys_clk,                // system clock
         end
     end
     
-    IVLBC u_i(
-    .result(result),
-    .state(state),
-    .encrypt_start(encrypt_start),
-    .encrypt_end(encrypt_end),
-    .keys(keys),
-    .sys_clk(clk));
-
+    encrytion u_e(
+    .Plain(state),
+    .Key(keys),
+    .clock(clk),
+    .encrypt_start(encrypt_start), // start encrypt
+    .encrypt_end(encrypt_end),   // encrypt finish
+    .Cipher(result));
+    
 endmodule

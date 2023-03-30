@@ -38,10 +38,6 @@ module encrytion(Plain,
     wire[0:127] cipher3;
     wire[0:31] rt;
     
-    initial
-    begin
-        r <= 6'h0;
-    end
     
     always @(posedge clock)
     begin
@@ -53,7 +49,7 @@ module encrytion(Plain,
     
     // end encrypt if encrypt finish by r
     always @(posedge  clock) begin
-        if (r == 32 && encrypt_start) begin
+        if (r > 31 && encrypt_start) begin
             encrypt_end = 1;
         end
         else begin

@@ -1,12 +1,12 @@
 
-module p_uart_recv (input sys_clk,                // system clock
-                    input sys_rst_n,              // reset sign
-                    input uart_rxd,               // uart receive
-                    output reg uart_done,         // receive done flog
-                    output reg rx_flag,           // receive busy flag
-                    output reg [3:0] rx_cnt,      // receive count
+module p_uart_recv (input sys_clk,                 // system clock
+                    input sys_rst_n,               // reset sign
+                    input uart_rxd,                // uart receive
+                    output reg uart_done,          // receive done flog
+                    output reg rx_flag,            // receive busy flag
+                    output reg [7:0] rx_cnt,       // receive count
                     output wire [7:0] rxdata,
-                    output reg [63:0] uart_data);
+                    output reg [127:0] uart_data);
     
     //parameter define
     parameter  CLK_FREQ = 50000000;               // system colck
@@ -15,7 +15,7 @@ module p_uart_recv (input sys_clk,                // system clock
     
     wire uart_recv_done;
     reg [15:0] clk_cnt;                              // system clock count
-    reg [63:0] tp_uart_data;  /*synthesis syn_preserve = 1*/
+    reg [127:0] tp_uart_data;  /*synthesis syn_preserve = 1*/
     // reg define
     reg recv_done_d0;
     reg recv_done_d1;
@@ -43,7 +43,7 @@ module p_uart_recv (input sys_clk,                // system clock
         else begin
             if (start_flag)
                 rx_flag <= 1'b1;
-            else if ((rx_cnt == 4'd8))
+            else if ((rx_cnt == 8'd16))
                 rx_flag <= 1'b0;
             else
                 rx_flag <= rx_flag;
@@ -70,14 +70,22 @@ module p_uart_recv (input sys_clk,                // system clock
         end
         else begin
             case (rx_cnt)
-                4'd0 : tp_uart_data[7:0]   <= rxdata;
-                4'd1 : tp_uart_data[15:8]  <= rxdata;
-                4'd2 : tp_uart_data[23:16] <= rxdata;
-                4'd3 : tp_uart_data[31:24] <= rxdata;
-                4'd4 : tp_uart_data[39:32] <= rxdata;
-                4'd5 : tp_uart_data[47:40] <= rxdata;
-                4'd6 : tp_uart_data[55:48] <= rxdata;
-                4'd7 : tp_uart_data[63:56] <= rxdata;
+                8'd0 : tp_uart_data[7:0]   <= rxdata;
+                8'd1 : tp_uart_data[15:8]  <= rxdata;
+                8'd2 : tp_uart_data[23:16] <= rxdata;
+                8'd3 : tp_uart_data[31:24] <= rxdata;
+                8'd4 : tp_uart_data[39:32] <= rxdata;
+                8'd5 : tp_uart_data[47:40] <= rxdata;
+                8'd6 : tp_uart_data[55:48] <= rxdata;
+                8'd7 : tp_uart_data[63:56] <= rxdata;
+                8'd8 : tp_uart_data[71:64] <= rxdata;
+                8'd9 : tp_uart_data[79:72] <= rxdata;
+                8'd10 : tp_uart_data[87:80] <= rxdata;
+                8'd11 : tp_uart_data[95:88] <= rxdata;
+                8'd12 : tp_uart_data[103:96] <= rxdata;
+                8'd13 : tp_uart_data[111:104] <= rxdata;
+                8'd14 : tp_uart_data[119:112] <= rxdata;
+                8'd15 : tp_uart_data[127:120] <= rxdata;
                 default:;
             endcase
         end
@@ -89,7 +97,7 @@ module p_uart_recv (input sys_clk,                // system clock
             uart_data <= 64'd0;
             uart_done <= 1'b0;
         end
-        else if (rx_cnt == 4'd8) begin
+        else if (rx_cnt == 8'd16) begin
             uart_data <= tp_uart_data;
             uart_done <= 1'b1;
         end

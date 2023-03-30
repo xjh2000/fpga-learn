@@ -9,9 +9,9 @@ module top(input sys_clk,    // 50 M system clock
     
     // wire define
     wire       uart_recv_done;              // receive done flag
-    wire [63:0] uart_recv_data;    /*synthesis syn_keep = 1*/        // receive data buff
+    wire [127:0] uart_recv_data;    /*synthesis syn_keep = 1*/        // receive data buff
     wire       uart_send_en;                // send start flag
-    wire [63:0] uart_send_data;              // send data buff
+    wire [127:0] uart_send_data;              // send data buff
     wire       uart_tx_busy;                // when send is busy
     
     //*****************************************************
