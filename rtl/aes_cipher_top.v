@@ -141,7 +141,7 @@ module aes_cipher_top(clk,
     .s2_o(sa20_mc),
     .s3_o(sa30_mc)
     );
-
+    
     aes_mix_column um1(
     .s0(sa01_sr),
     .s1(sa11_sr),
@@ -152,8 +152,8 @@ module aes_cipher_top(clk,
     .s2_o(sa21_mc),
     .s3_o(sa31_mc)
     );
-
-     aes_mix_column um2(
+    
+    aes_mix_column um2(
     .s0(sa02_sr),
     .s1(sa12_sr),
     .s2(sa22_sr),
@@ -163,9 +163,9 @@ module aes_cipher_top(clk,
     .s2_o(sa22_mc),
     .s3_o(sa32_mc)
     );
-
     
-     aes_mix_column um3(
+    
+    aes_mix_column um3(
     .s0(sa03_sr),
     .s1(sa13_sr),
     .s2(sa23_sr),
@@ -175,23 +175,23 @@ module aes_cipher_top(clk,
     .s2_o(sa23_mc),
     .s3_o(sa33_mc)
     );
-  
-    assign sa00_next                            = sa00_mc ^ w0[31:24];
-    assign sa01_next                            = sa01_mc ^ w1[31:24];
-    assign sa02_next                            = sa02_mc ^ w2[31:24];
-    assign sa03_next                            = sa03_mc ^ w3[31:24];
-    assign sa10_next                            = sa10_mc ^ w0[23:16];
-    assign sa11_next                            = sa11_mc ^ w1[23:16];
-    assign sa12_next                            = sa12_mc ^ w2[23:16];
-    assign sa13_next                            = sa13_mc ^ w3[23:16];
-    assign sa20_next                            = sa20_mc ^ w0[15:08];
-    assign sa21_next                            = sa21_mc ^ w1[15:08];
-    assign sa22_next                            = sa22_mc ^ w2[15:08];
-    assign sa23_next                            = sa23_mc ^ w3[15:08];
-    assign sa30_next                            = sa30_mc ^ w0[07:00];
-    assign sa31_next                            = sa31_mc ^ w1[07:00];
-    assign sa32_next                            = sa32_mc ^ w2[07:00];
-    assign sa33_next                            = sa33_mc ^ w3[07:00];
+    
+    assign sa00_next = sa00_mc ^ w0[31:24];
+    assign sa01_next = sa01_mc ^ w1[31:24];
+    assign sa02_next = sa02_mc ^ w2[31:24];
+    assign sa03_next = sa03_mc ^ w3[31:24];
+    assign sa10_next = sa10_mc ^ w0[23:16];
+    assign sa11_next = sa11_mc ^ w1[23:16];
+    assign sa12_next = sa12_mc ^ w2[23:16];
+    assign sa13_next = sa13_mc ^ w3[23:16];
+    assign sa20_next = sa20_mc ^ w0[15:08];
+    assign sa21_next = sa21_mc ^ w1[15:08];
+    assign sa22_next = sa22_mc ^ w2[15:08];
+    assign sa23_next = sa23_mc ^ w3[15:08];
+    assign sa30_next = sa30_mc ^ w0[07:00];
+    assign sa31_next = sa31_mc ^ w1[07:00];
+    assign sa32_next = sa32_mc ^ w2[07:00];
+    assign sa33_next = sa33_mc ^ w3[07:00];
     
     ////////////////////////////////////////////////////////////////////
     //
