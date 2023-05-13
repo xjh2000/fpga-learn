@@ -1,7 +1,8 @@
-module top(input sys_clk,    // 50 M system clock
-           input sys_rst_n,  // reset sign
-           input uart_rxd,   // uart receive
-           output uart_txd); // uart send
+module top(input sys_clk,   // 50 M system clock
+           input sys_rst_n, // reset sign
+           input uart_rxd,  // uart receive
+           output uart_txd, // uart send
+           output led);     // runing led
     
     // parameter define
     parameter  CLK_FREQ = 50000000;         // sys clock frequency
@@ -18,6 +19,12 @@ module top(input sys_clk,    // 50 M system clock
     //**                    main code
     //*****************************************************
     
+    reg [23:0] count = 0;
+ 
+    assign led = count[23];
+ 
+    always @ (posedge(sys_clk)) count <= count + 1;
+
     // uart receive module
     p_uart_recv #(
     .CLK_FREQ       (CLK_FREQ),
