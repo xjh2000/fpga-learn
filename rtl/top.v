@@ -26,6 +26,23 @@ module top(input sys_clk,        // 50 M system clock
     
     always @ (posedge(sys_clk)) count <= count + 1;
     
+    reg led_en;
+    reg [23:0] led_data;
+    
+    always @(posedge (sys_clk)) begin
+        led_en   <= 1'b1;
+        led_data <= 24'hfecda9;
+    end
+    
+    // segment led
+    seg_led usl(
+    .clk(sys_clk),
+    .rst_n(sys_rst_n),
+    .data(led_data),
+    .en(led_en),
+    .seg_sel(seg_sel),
+    .seg_led(seg_led));
+    
     // uart receive module
     p_uart_recv #(
     .CLK_FREQ       (CLK_FREQ),
