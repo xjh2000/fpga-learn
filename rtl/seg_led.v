@@ -160,7 +160,7 @@ module seg_led (input clk,                 // system signal
                 4'd11 : seg_led <= ~{(1'b1),(7'b0000011)};  // b
                 4'd12 : seg_led <= ~{(1'b1),(7'b1000110)};  // c
                 4'd13 : seg_led <= ~{(1'b1),(7'b0100001)};  // d
-                4'd14 : seg_led <= ~{(1'b1),(7'b0000100)};  // e
+                4'd14 : seg_led <= ~{(1'b1),(7'b0000110)};  // e
                 4'd15 : seg_led <= ~{(1'b1),(7'b0001110)};  // f
                 
                 default:

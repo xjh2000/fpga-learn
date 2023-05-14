@@ -20,18 +20,22 @@ module top(input sys_clk,        // 50 M system clock
     //**                    main code
     //*****************************************************
     
+    // led light
     reg [23:0] count = 0;
-    
-    assign led = count[23];
-    
+    assign led       = count[23];
     always @ (posedge(sys_clk)) count <= count + 1;
     
+    // segment led
     reg led_en;
     reg [23:0] led_data;
     
     always @(posedge (sys_clk)) begin
-        led_en   <= 1'b1;
-        led_data <= 24'hfecda9;
+        led_en <= 1'b1;
+        if (uart_send_en) begin
+            led_data <= {uart_send_data[7:0],uart_send_data[15:8],uart_send_data[23:16]};
+            end else begin
+            led_data <= led_data;
+        end
     end
     
     // segment led
