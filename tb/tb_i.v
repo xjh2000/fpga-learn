@@ -44,10 +44,4 @@ module tb_i();
     );
     
     
-    initial begin
-        $dumpfile("./wave.vcd");
-        $dumpvars(0, tb_i);
-        #(PERIOD*40) $finish;
-    end
-    
 endmodule
