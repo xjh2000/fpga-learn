@@ -1,7 +1,7 @@
 module seg_led (input clk,                 // system signal
                 input rst_n,               // reset signal
                 input [23:0] data,         // 6 led
-                input en,                  //
+                input en,                  // enable flag
                 output reg [5:0] seg_sel,  // Nixie tube select
                 output reg [7:0] seg_led); // Nixie tube show
     
